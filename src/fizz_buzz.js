@@ -1,26 +1,28 @@
-function fizz_buzz(num) {
+class Fizzbuzz {
+
+ play(num) {
     while (num < 100) { 
-        num += 1   
         // num++ <-- this is the same as num += 1
 
         if (num % 3 == 0 && num % 5 == 0) {
-            console.log("FizzBuzz"); } 
+            return "FizzBuzz"; } 
 
         else if (num % 3 == 0) {
-            console.log("Fizz"); }  
+            return "Fizz"; }  
 
         else if (num % 5 == 0) {
-            console.log("buzz"); }  
+            return "Buzz"; }  
 
         else { 
             
-        console.log(num); 
+            return num; 
 
         }
-        
+        num += 1 
     } 
 
 } 
 
-fizz_buzz(1); 
+}
+//fizz_buzz(1); 
 
